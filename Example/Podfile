@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'CKHaptic_Example' do
+  pod 'CKHaptic', :path => '../'
+
+  target 'CKHaptic_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
