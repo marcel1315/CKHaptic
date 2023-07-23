@@ -1,5 +1,6 @@
 # CKHaptic
 
+[![SwiftPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
 [![Version](https://img.shields.io/cocoapods/v/CKHaptic.svg?style=flat)](https://cocoapods.org/pods/CKHaptic)
 [![License](https://img.shields.io/cocoapods/l/CKHaptic.svg?style=flat)](https://cocoapods.org/pods/CKHaptic)
 [![Platform](https://img.shields.io/cocoapods/p/CKHaptic.svg?style=flat)](https://cocoapods.org/pods/CKHaptic)
@@ -68,6 +69,11 @@ There are two more variable for haptic.
 - iOS 13+
 
 ## Installation
+
+### Swift Package Manager
+
+Xcode > File > Swift Packages > Add Package Dependency  
+Add https://github.com/chungchung1315/CKHaptic
 
 ### CocoaPods
 
