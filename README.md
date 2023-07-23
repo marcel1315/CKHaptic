@@ -18,7 +18,7 @@ import CKHaptic
 
 let events = [
     try CKHapticBuzz.create("---____---", intensity: 0.5, sharpness: 0.5),
-    try CKHapticBeat.create("_|___|____", intensity: 1, sharpness: 1)
+    try CKHapticBeat.create("_|___|____", intensity: 1, sharpness: 1) // The first argument should have same length with above event's argument.
 ]
 
 try CKHaptic.shared.play(events: events, duration: .seconds(1))
