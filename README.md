@@ -31,8 +31,9 @@ There are two types of haptic feedback.
 
   - Use combinations of "-" and "_" String to represent a Buzz haptic.
 
-  - "---____---" means buzz 3 times, silent 4 times and buzz 3 times. If a duration is 1 second, each character means 0.1 second.
-
+    ```swift
+    "---____---" // means buzz 3 times, silent 4 times and buzz 3 times. If a duration is 1 second, each character means 0.1 second.
+    ```
 
 - Beat
 
@@ -40,13 +41,15 @@ There are two types of haptic feedback.
 
   - Use combinations of "|" and "_" String to represent a Beat haptic.
 
-  - "_|___|____" means beat twice. If a duration is 1 second, it beats at 0.1 and 0.5 second.
+    ```swift
+    "_|___|____" // means beat twice. If a duration is 1 second, it beats at 0.1 and 0.5 second.
+    ```
 
 You can mix two haptic types.
 
   - If you play two or more events, haptics will happen at the same time for the duration instead of sequencially playing.
 
-  - CATUION: The length of the string of the each event should be same.
+  - CAUTION: The length of the string of the each event should be same.
 
 There are two more variable for haptic.
 
