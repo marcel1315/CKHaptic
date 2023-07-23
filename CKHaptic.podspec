@@ -9,35 +9,22 @@
 Pod::Spec.new do |s|
   s.name             = 'CKHaptic'
   s.version          = '0.1.0'
-  s.summary          = 'Simple custom haptic creation and playing.'
+  s.summary          = 'Play your custom haptic feedback with ease.'
 
 # This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Play your custom haptic feedback with ease. With a few strings, you can create various mixes of haptic vibration. This SDK provides two types of haptics - Buzz and Beat, which you can customize with the variables such as intensity and sharpness. Under the hood it uses native Core Haptics library. The Buzz corresponds to 'hapticContinuous' and Beat to 'hapticTransient'. The intensity and sharpness are the same as in Core Haptics.
                        DESC
 
   s.homepage         = 'https://github.com/chungchung1315/CKHaptic'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Marcel' => 'chungchung1315@gmail.com' }
   s.source           = { :git => 'https://github.com/chungchung1315/CKHaptic.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
 
   s.source_files = 'CKHaptic/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'CKHaptic' => ['CKHaptic/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'CoreHaptics'  
 end
