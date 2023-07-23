@@ -5,6 +5,8 @@
 //  Created by Marcel on 2023/07/22.
 //
 
+import Foundation
+
 public enum CKHapticError: Error {
     case hapticNotSupported
     case eventRawStringInvalid
