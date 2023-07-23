@@ -1,0 +1,16 @@
+PODS:
+  - CKHaptic (0.1.0)
+
+DEPENDENCIES:
+  - CKHaptic (from `../`)
+
+EXTERNAL SOURCES:
+  CKHaptic:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CKHaptic: 2f6b677d4eda6f9153888410a63e3927095f0dbd
+
+PODFILE CHECKSUM: f75525c9f73042c60ca071e5ead6ace0e991a429
+
+COCOAPODS: 1.12.1

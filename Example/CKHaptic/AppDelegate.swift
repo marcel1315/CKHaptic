@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CKHaptic
 //
-//  Created by 58544486 on 07/22/2023.
-//  Copyright (c) 2023 58544486. All rights reserved.
+//  Created by Marcel on 07/22/2023.
+//  Copyright (c) 2023 Marcel. All rights reserved.
 //
 
 import UIKit

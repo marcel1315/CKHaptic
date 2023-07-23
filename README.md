@@ -1,6 +1,5 @@
 # CKHaptic
 
-[![CI Status](https://img.shields.io/travis/58544486/CKHaptic.svg?style=flat)](https://travis-ci.org/58544486/CKHaptic)
 [![Version](https://img.shields.io/cocoapods/v/CKHaptic.svg?style=flat)](https://cocoapods.org/pods/CKHaptic)
 [![License](https://img.shields.io/cocoapods/l/CKHaptic.svg?style=flat)](https://cocoapods.org/pods/CKHaptic)
 [![Platform](https://img.shields.io/cocoapods/p/CKHaptic.svg?style=flat)](https://cocoapods.org/pods/CKHaptic)
@@ -22,7 +21,7 @@ pod 'CKHaptic'
 
 ## Author
 
-58544486, chungchung1315@gmail.com
+Marcel, chungchung1315@gmail.com
 
 ## License
 

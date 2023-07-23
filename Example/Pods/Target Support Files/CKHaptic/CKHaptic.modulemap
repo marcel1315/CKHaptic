@@ -1,0 +1,6 @@
+framework module CKHaptic {
+  umbrella header "CKHaptic-umbrella.h"
+
+  export *
+  module * { export * }
+}

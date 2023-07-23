@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E0B2844B0802ABDA2876E3EDF641AD9 /* Pods-CKHaptic_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AF230284A75190B1F6E0C4B417D62E /* Pods-CKHaptic_Tests-dummy.m */; };
+		108A0008026066101787CBB1FE132225 /* CKHaptic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D056FC846FE2C0D8B9E437577DD2C4E /* CKHaptic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DE694C7849D311FB97B0E1E918A95C5 /* Pods-CKHaptic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6963DF5CA7B416E9D71094F18119089 /* Pods-CKHaptic_Example-dummy.m */; };
+		526F5D36DC53E65E9555F010646E648F /* Pods-CKHaptic_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6CB2952EA309B5F19E9A25667863117 /* Pods-CKHaptic_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FF08E46A867AFF5FD93D10F09CB2171 /* CKHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5818A4808782E86CE6B4A8BA723933B /* CKHaptic.swift */; };
+		B3CFAACE9CAA4FAD59D2920F265BC5EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D942D484A806C13267C388D9251F4C0A /* Pods-CKHaptic_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F27138C6BB9C6D2EFEBB3D443BA9D3 /* Pods-CKHaptic_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E12D71DC69D9A22A3FA4FD42C98A8081 /* CKHaptic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44B10272995CB77C3A09FA4A2B71A2 /* CKHaptic-dummy.m */; };
+		E4E39281F0FC5330136F634F96B2D862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EBA7BB642423C09AFFC831856894C877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FCC8886B2A6BAA1900AFC3AF /* CKHapticError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8886A2A6BAA1900AFC3AF /* CKHapticError.swift */; };
+		FCC8886D2A6BAC9400AFC3AF /* CKHapticTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8886C2A6BAC9400AFC3AF /* CKHapticTime.swift */; };
+		FCC8886F2A6BAD1100AFC3AF /* CKHapticEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8886E2A6BAD1100AFC3AF /* CKHapticEvent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B302693D209803FF5E9A3A08E7E71AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C42746EC5C836FD4E2E9B5C73046AA13;
+			remoteInfo = "Pods-CKHaptic_Example";
+		};
+		5C19FBAEA8BFDDF1A1755E8DC0235F7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3A7B8D7A4744E3DF352AA1B69A192FA;
+			remoteInfo = CKHaptic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E5748A915C2BBEAC9DDAD9D8371696 /* Pods-CKHaptic_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CKHaptic_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		089624EEB42215D33CFDC1C8A87C7792 /* CKHaptic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CKHaptic.debug.xcconfig; sourceTree = "<group>"; };
+		1D056FC846FE2C0D8B9E437577DD2C4E /* CKHaptic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CKHaptic-umbrella.h"; sourceTree = "<group>"; };
+		1DDAE818C171921A0861CF24179F3644 /* CKHaptic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CKHaptic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F37E26A30F0FC887DE3F0FE3B32AF60 /* CKHaptic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CKHaptic-prefix.pch"; sourceTree = "<group>"; };
+		21732E85B4CFA47FB1D8F6C8910E41AE /* Pods_CKHaptic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKHaptic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		331943D5B6076E3F0F29E0874049EE74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		33EDBFA7CF0318E4F8F877CDFD86F737 /* Pods-CKHaptic_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CKHaptic_Tests.modulemap"; sourceTree = "<group>"; };
+		3959BB93DC690226D815EA8180EDD446 /* Pods-CKHaptic_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CKHaptic_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3D44B10272995CB77C3A09FA4A2B71A2 /* CKHaptic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CKHaptic-dummy.m"; sourceTree = "<group>"; };
+		3FAA7EB90FD13B667FBFCBD7F26E43E5 /* Pods-CKHaptic_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CKHaptic_Tests-Info.plist"; sourceTree = "<group>"; };
+		439C93EA30F05BB42ED2A339C67E6818 /* Pods-CKHaptic_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CKHaptic_Example-Info.plist"; sourceTree = "<group>"; };
+		48FAA25461091693C79042BE5AEC6C71 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5121C074B0AA1BF0E70944541461F4FB /* Pods-CKHaptic_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CKHaptic_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5F07A199C45B283FA272AAFB1E0DBFDD /* CKHaptic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CKHaptic-Info.plist"; sourceTree = "<group>"; };
+		6A891B2F8AE29FCCB1D8F026D4E22F56 /* Pods-CKHaptic_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKHaptic_Example.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		85C7A793AD641A6F431608F3F0208278 /* Pods-CKHaptic_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKHaptic_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		92BBA122F2ACF96E8585CE499BDC1072 /* CKHaptic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CKHaptic.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A330DEC0B675973B842DEE72CD1A0728 /* Pods-CKHaptic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CKHaptic_Example.modulemap"; sourceTree = "<group>"; };
+		A5818A4808782E86CE6B4A8BA723933B /* CKHaptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CKHaptic.swift; path = CKHaptic/Classes/CKHaptic.swift; sourceTree = "<group>"; };
+		B2551D86FD5B88ABB1FADBED189B704A /* CKHaptic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CKHaptic.modulemap; sourceTree = "<group>"; };
+		B6CB2952EA309B5F19E9A25667863117 /* Pods-CKHaptic_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CKHaptic_Example-umbrella.h"; sourceTree = "<group>"; };
+		BCB72980791E5D8FECCED1E3BAFF69E0 /* Pods-CKHaptic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CKHaptic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C328B57010B48217F4B38E8EE44030D5 /* Pods-CKHaptic_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKHaptic_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C3993D3A2276B54E341100AA5EF2DAEA /* Pods_CKHaptic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKHaptic_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F27138C6BB9C6D2EFEBB3D443BA9D3 /* Pods-CKHaptic_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CKHaptic_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D4444C8148F4EB775B16D8A237F0A709 /* Pods-CKHaptic_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKHaptic_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E66FADD79A9A1B03BDB28CA8DFFB163E /* Pods-CKHaptic_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CKHaptic_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F1AF230284A75190B1F6E0C4B417D62E /* Pods-CKHaptic_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CKHaptic_Tests-dummy.m"; sourceTree = "<group>"; };
+		F6963DF5CA7B416E9D71094F18119089 /* Pods-CKHaptic_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CKHaptic_Example-dummy.m"; sourceTree = "<group>"; };
+		F8ECFC333D2A14CA4E47CA6217D33D6A /* CKHaptic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CKHaptic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC8886A2A6BAA1900AFC3AF /* CKHapticError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CKHapticError.swift; path = CKHaptic/Classes/CKHapticError.swift; sourceTree = "<group>"; };
+		FCC8886C2A6BAC9400AFC3AF /* CKHapticTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CKHapticTime.swift; path = CKHaptic/Classes/CKHapticTime.swift; sourceTree = "<group>"; };
+		FCC8886E2A6BAD1100AFC3AF /* CKHapticEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CKHapticEvent.swift; path = CKHaptic/Classes/CKHapticEvent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A2D8BD4B90B237AB86207B9433DD460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA7BB642423C09AFFC831856894C877 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5568F50DB95DA4D29BA5BA83E8B1C9E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E39281F0FC5330136F634F96B2D862 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77F635B7F4D279D3FF11C54391B068C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3CFAACE9CAA4FAD59D2920F265BC5EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A8A29897DB0FA02381E41E47D39AD7F /* Pods-CKHaptic_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A330DEC0B675973B842DEE72CD1A0728 /* Pods-CKHaptic_Example.modulemap */,
+				BCB72980791E5D8FECCED1E3BAFF69E0 /* Pods-CKHaptic_Example-acknowledgements.markdown */,
+				5121C074B0AA1BF0E70944541461F4FB /* Pods-CKHaptic_Example-acknowledgements.plist */,
+				F6963DF5CA7B416E9D71094F18119089 /* Pods-CKHaptic_Example-dummy.m */,
+				3959BB93DC690226D815EA8180EDD446 /* Pods-CKHaptic_Example-frameworks.sh */,
+				439C93EA30F05BB42ED2A339C67E6818 /* Pods-CKHaptic_Example-Info.plist */,
+				B6CB2952EA309B5F19E9A25667863117 /* Pods-CKHaptic_Example-umbrella.h */,
+				C328B57010B48217F4B38E8EE44030D5 /* Pods-CKHaptic_Example.debug.xcconfig */,
+				6A891B2F8AE29FCCB1D8F026D4E22F56 /* Pods-CKHaptic_Example.release.xcconfig */,
+			);
+			name = "Pods-CKHaptic_Example";
+			path = "Target Support Files/Pods-CKHaptic_Example";
+			sourceTree = "<group>";
+		};
+		11EC8F349AA7F3C318124701FF479AA7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2551D86FD5B88ABB1FADBED189B704A /* CKHaptic.modulemap */,
+				3D44B10272995CB77C3A09FA4A2B71A2 /* CKHaptic-dummy.m */,
+				5F07A199C45B283FA272AAFB1E0DBFDD /* CKHaptic-Info.plist */,
+				1F37E26A30F0FC887DE3F0FE3B32AF60 /* CKHaptic-prefix.pch */,
+				1D056FC846FE2C0D8B9E437577DD2C4E /* CKHaptic-umbrella.h */,
+				089624EEB42215D33CFDC1C8A87C7792 /* CKHaptic.debug.xcconfig */,
+				92BBA122F2ACF96E8585CE499BDC1072 /* CKHaptic.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CKHaptic";
+			sourceTree = "<group>";
+		};
+		155DD5FF44572336A158979DC0EEDB66 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1DDAE818C171921A0861CF24179F3644 /* CKHaptic.podspec */,
+				48FAA25461091693C79042BE5AEC6C71 /* LICENSE */,
+				331943D5B6076E3F0F29E0874049EE74 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B2490F63F04F82CBF16647A20598EF4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A8A29897DB0FA02381E41E47D39AD7F /* Pods-CKHaptic_Example */,
+				D89405F5F8F3C4944525EF03F20094FF /* Pods-CKHaptic_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D1612E318B906CBE556FD6BB22A12AF7 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D09CAA2A365BBA489BC8B8188C10E881 /* Products */,
+				5B2490F63F04F82CBF16647A20598EF4 /* Targets Support Files */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+		};
+		D09CAA2A365BBA489BC8B8188C10E881 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECFC333D2A14CA4E47CA6217D33D6A /* CKHaptic.framework */,
+				21732E85B4CFA47FB1D8F6C8910E41AE /* Pods_CKHaptic_Example.framework */,
+				C3993D3A2276B54E341100AA5EF2DAEA /* Pods_CKHaptic_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1612E318B906CBE556FD6BB22A12AF7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDEB861837A8E7A60FAE116D3137BDDB /* CKHaptic */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D89405F5F8F3C4944525EF03F20094FF /* Pods-CKHaptic_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				33EDBFA7CF0318E4F8F877CDFD86F737 /* Pods-CKHaptic_Tests.modulemap */,
+				E66FADD79A9A1B03BDB28CA8DFFB163E /* Pods-CKHaptic_Tests-acknowledgements.markdown */,
+				05E5748A915C2BBEAC9DDAD9D8371696 /* Pods-CKHaptic_Tests-acknowledgements.plist */,
+				F1AF230284A75190B1F6E0C4B417D62E /* Pods-CKHaptic_Tests-dummy.m */,
+				3FAA7EB90FD13B667FBFCBD7F26E43E5 /* Pods-CKHaptic_Tests-Info.plist */,
+				D3F27138C6BB9C6D2EFEBB3D443BA9D3 /* Pods-CKHaptic_Tests-umbrella.h */,
+				D4444C8148F4EB775B16D8A237F0A709 /* Pods-CKHaptic_Tests.debug.xcconfig */,
+				85C7A793AD641A6F431608F3F0208278 /* Pods-CKHaptic_Tests.release.xcconfig */,
+			);
+			name = "Pods-CKHaptic_Tests";
+			path = "Target Support Files/Pods-CKHaptic_Tests";
+			sourceTree = "<group>";
+		};
+		EDEB861837A8E7A60FAE116D3137BDDB /* CKHaptic */ = {
+			isa = PBXGroup;
+			children = (
+				A5818A4808782E86CE6B4A8BA723933B /* CKHaptic.swift */,
+				FCC8886A2A6BAA1900AFC3AF /* CKHapticError.swift */,
+				FCC8886E2A6BAD1100AFC3AF /* CKHapticEvent.swift */,
+				FCC8886C2A6BAC9400AFC3AF /* CKHapticTime.swift */,
+				155DD5FF44572336A158979DC0EEDB66 /* Pod */,
+				11EC8F349AA7F3C318124701FF479AA7 /* Support Files */,
+			);
+			name = CKHaptic;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		55115654D84E464164BE7E7C8BD36082 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526F5D36DC53E65E9555F010646E648F /* Pods-CKHaptic_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992CBCF85926C927182AFDA563BF7E86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D942D484A806C13267C388D9251F4C0A /* Pods-CKHaptic_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8307B8FDA4F30663DC5596322EA16BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108A0008026066101787CBB1FE132225 /* CKHaptic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B3A7B8D7A4744E3DF352AA1B69A192FA /* CKHaptic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9559450F1BE5F7DB66E3508A58D1B740 /* Build configuration list for PBXNativeTarget "CKHaptic" */;
+			buildPhases = (
+				B8307B8FDA4F30663DC5596322EA16BF /* Headers */,
+				3AC634AB5BB4812819F56D62BCCD9BA1 /* Sources */,
+				2A2D8BD4B90B237AB86207B9433DD460 /* Frameworks */,
+				3A37659C00EA8352163EC275279B7A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CKHaptic;
+			productName = CKHaptic;
+			productReference = F8ECFC333D2A14CA4E47CA6217D33D6A /* CKHaptic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C42746EC5C836FD4E2E9B5C73046AA13 /* Pods-CKHaptic_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3080DFE2F48341F6C7370B50F38F39EF /* Build configuration list for PBXNativeTarget "Pods-CKHaptic_Example" */;
+			buildPhases = (
+				55115654D84E464164BE7E7C8BD36082 /* Headers */,
+				4B32FF3FD8C9ED0200CE976FE4A52333 /* Sources */,
+				C77F635B7F4D279D3FF11C54391B068C /* Frameworks */,
+				2E9D705E2FB4EC77C51E5AE067064EE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1935BFECA07980D29C44A9CC9CF2BB01 /* PBXTargetDependency */,
+			);
+			name = "Pods-CKHaptic_Example";
+			productName = Pods_CKHaptic_Example;
+			productReference = 21732E85B4CFA47FB1D8F6C8910E41AE /* Pods_CKHaptic_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4968AECA132A84E49900E87CBD3EE07 /* Pods-CKHaptic_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D9C291269A92872B01D857C356AC07 /* Build configuration list for PBXNativeTarget "Pods-CKHaptic_Tests" */;
+			buildPhases = (
+				992CBCF85926C927182AFDA563BF7E86 /* Headers */,
+				10E8AA7529495372368A9ABF195CE0F8 /* Sources */,
+				5568F50DB95DA4D29BA5BA83E8B1C9E4 /* Frameworks */,
+				4E5015EC4D99DB81857BFB6D0ADBA453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C7E4C87CE7060E6AB696ADC54E388E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-CKHaptic_Tests";
+			productName = Pods_CKHaptic_Tests;
+			productReference = C3993D3A2276B54E341100AA5EF2DAEA /* Pods_CKHaptic_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D09CAA2A365BBA489BC8B8188C10E881 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3A7B8D7A4744E3DF352AA1B69A192FA /* CKHaptic */,
+				C42746EC5C836FD4E2E9B5C73046AA13 /* Pods-CKHaptic_Example */,
+				E4968AECA132A84E49900E87CBD3EE07 /* Pods-CKHaptic_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E9D705E2FB4EC77C51E5AE067064EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A37659C00EA8352163EC275279B7A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5015EC4D99DB81857BFB6D0ADBA453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10E8AA7529495372368A9ABF195CE0F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0B2844B0802ABDA2876E3EDF641AD9 /* Pods-CKHaptic_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC634AB5BB4812819F56D62BCCD9BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12D71DC69D9A22A3FA4FD42C98A8081 /* CKHaptic-dummy.m in Sources */,
+				FCC8886B2A6BAA1900AFC3AF /* CKHapticError.swift in Sources */,
+				9FF08E46A867AFF5FD93D10F09CB2171 /* CKHaptic.swift in Sources */,
+				FCC8886D2A6BAC9400AFC3AF /* CKHapticTime.swift in Sources */,
+				FCC8886F2A6BAD1100AFC3AF /* CKHapticEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B32FF3FD8C9ED0200CE976FE4A52333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE694C7849D311FB97B0E1E918A95C5 /* Pods-CKHaptic_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1935BFECA07980D29C44A9CC9CF2BB01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CKHaptic;
+			target = B3A7B8D7A4744E3DF352AA1B69A192FA /* CKHaptic */;
+			targetProxy = 5C19FBAEA8BFDDF1A1755E8DC0235F7B /* PBXContainerItemProxy */;
+		};
+		8C7E4C87CE7060E6AB696ADC54E388E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CKHaptic_Example";
+			target = C42746EC5C836FD4E2E9B5C73046AA13 /* Pods-CKHaptic_Example */;
+			targetProxy = 2B302693D209803FF5E9A3A08E7E71AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		494EC2FFDB97373C4CBA78D4DF4D513C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 089624EEB42215D33CFDC1C8A87C7792 /* CKHaptic.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CKHaptic/CKHaptic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CKHaptic/CKHaptic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CKHaptic/CKHaptic.modulemap";
+				PRODUCT_MODULE_NAME = CKHaptic;
+				PRODUCT_NAME = CKHaptic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DC68EE95F139BFC75A4E1C70CA19352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C328B57010B48217F4B38E8EE44030D5 /* Pods-CKHaptic_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CKHaptic_Example/Pods-CKHaptic_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CKHaptic_Example/Pods-CKHaptic_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E87E5FCF6E690718FD61756EFB50D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A891B2F8AE29FCCB1D8F026D4E22F56 /* Pods-CKHaptic_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CKHaptic_Example/Pods-CKHaptic_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CKHaptic_Example/Pods-CKHaptic_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9B4FD0B4F23CDAFBE159414E8FE39E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BBA122F2ACF96E8585CE499BDC1072 /* CKHaptic.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CKHaptic/CKHaptic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CKHaptic/CKHaptic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CKHaptic/CKHaptic.modulemap";
+				PRODUCT_MODULE_NAME = CKHaptic;
+				PRODUCT_NAME = CKHaptic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BFE709A79754B8A9B6038BB126F0A237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85C7A793AD641A6F431608F3F0208278 /* Pods-CKHaptic_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CKHaptic_Tests/Pods-CKHaptic_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CKHaptic_Tests/Pods-CKHaptic_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFDD448188A59521B9D43ADD03EECBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4444C8148F4EB775B16D8A237F0A709 /* Pods-CKHaptic_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CKHaptic_Tests/Pods-CKHaptic_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CKHaptic_Tests/Pods-CKHaptic_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3080DFE2F48341F6C7370B50F38F39EF /* Build configuration list for PBXNativeTarget "Pods-CKHaptic_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC68EE95F139BFC75A4E1C70CA19352 /* Debug */,
+				4E87E5FCF6E690718FD61756EFB50D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39D9C291269A92872B01D857C356AC07 /* Build configuration list for PBXNativeTarget "Pods-CKHaptic_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDD448188A59521B9D43ADD03EECBF1 /* Debug */,
+				BFE709A79754B8A9B6038BB126F0A237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9559450F1BE5F7DB66E3508A58D1B740 /* Build configuration list for PBXNativeTarget "CKHaptic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494EC2FFDB97373C4CBA78D4DF4D513C /* Debug */,
+				9B4FD0B4F23CDAFBE159414E8FE39E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
