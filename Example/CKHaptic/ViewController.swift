@@ -40,4 +40,10 @@ class ViewController: UIViewController {
             errorLabel.sizeToFit()
         }
     }
+    
+    @IBAction func stopHaptic(_ sender: UIButton) {
+        CKHaptic.shared.stop(completion: { error in
+            print(error ?? "")
+        })
+    }
 }

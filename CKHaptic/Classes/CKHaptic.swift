@@ -81,6 +81,20 @@ public class CKHaptic {
             throw CKHapticError.hapticEngineError(error: error)
         }
     }
+    
+    /// Stops playing haptic immediately. You don't always need to stop since the play will stop automatically when it finishes. This is necessary to stop while playing.
+    ///
+    /// - Parameters:
+    ///   - completion: `(Error?) -> Void` completionHandler
+    ///
+    public func stop(completion: ((Error?) -> Void)? = nil) {
+        do {
+            let hapticEngine = try getHapticEngine()
+            hapticEngine.stop(completionHandler: completion)
+        } catch {
+            completion?(error)
+        }
+    }
 }
 
 // MARK: - Validation

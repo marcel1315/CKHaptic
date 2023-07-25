@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hio-Ph-jHh">
-                                <rect key="frame" x="66" y="70" width="243" height="192.5"/>
+                                <rect key="frame" x="66" y="70" width="243" height="257"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="5Zg-34-NsH">
                                         <rect key="frame" x="0.0" y="0.0" width="243" height="34"/>
@@ -63,8 +63,16 @@
                                             <action selector="playHaptic:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DPo-Et-04a"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hp8-of-hL0">
+                                        <rect key="frame" x="0.0" y="192.5" width="243" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Stop Haptic"/>
+                                        <connections>
+                                            <action selector="stopHaptic:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vfb-3B-BdV"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx8-RE-p9J">
-                                        <rect key="frame" x="0.0" y="192.5" width="243" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="257" width="243" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
