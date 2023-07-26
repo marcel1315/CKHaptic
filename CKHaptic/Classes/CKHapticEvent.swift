@@ -20,25 +20,43 @@ public protocol CKHapticEvent {
     /// You can think of sharpness as a way to abstract a haptic experience into the waveform that produces the corresponding physical sensations. For example, you might use sharpness values to convey an experience that’s soft, rounded, or organic, or one that’s crisp, precise, or mechanical.
     var sharpness: Float { get }
     
-    /// Converts event raw string to `CHHapticEvent` that the Core Haptics can play with.
-    ///
-    /// - Parameter duration: `CKHapticTime` enum that has time in seconds or milliseconds.
-    ///
-    /// - Returns: `[CHHapticEvent]` that the system can play haptic with it.
-    // func convertToCHHapticEvent(duration: CKHapticTime) -> [CHHapticEvent]
-    
     /// Create `CKHapticEvent`.
     static func create(_ rawString: String, intensity: Float, sharpness: Float) throws -> CKHapticEvent
 }
 
 extension CKHapticEvent {
     static var eventRawStringLengthMaxSupport: Int { 256 }
+    
+    static func validate(rawString: String, allowedCharacters: CharacterSet, intensity: Float, sharpness: Float) throws {
+        
+        if rawString.isEmpty {
+            throw CKHapticError.eventRawStringInvalid
+        }
+        
+        if rawString.count > eventRawStringLengthMaxSupport {
+            throw CKHapticError.eventRawStringShouldBeUnderMaxSupport(support: eventRawStringLengthMaxSupport)
+        }
+        
+        if !intensity.isBetweenZeroAndOne() {
+            throw CKHapticError.intensityRangeInvalid
+        }
+        
+        if !sharpness.isBetweenZeroAndOne() {
+            throw CKHapticError.sharpnessRangeInvalid
+        }
+        
+        if !rawString.unicodeScalars.allSatisfy(allowedCharacters.contains) {
+            throw CKHapticError.eventRawStringInvalid
+        }
+    }
 }
 
 // MARK: - CKHapticBuzz
 
 /// One of the `CKHapticEvent` type. Haptic feedback with trembling. This converts into `hapticContinuous` event type in the Core Haptics Library. The HIG explains "Continuous events feel like sustained vibrations, such as the experience of the lasers effect in a message."
 public struct CKHapticBuzz: CKHapticEvent {
+    
+    private static var allowedCharacters: CharacterSet = .init(charactersIn: "_-")
     
     /// Event raw string. e.g. "---\_\_\_----". This means "vibrate 3 + pause 3 + vibrate 4" out of 10. If the duration of play is 1 seconds, vibrate 0.3s + pause 0.3s + vibrate 0.4s.
     public var rawString: String
@@ -52,15 +70,7 @@ public struct CKHapticBuzz: CKHapticEvent {
     }
     
     init(_ rawString: String, intensity: Float, sharpness: Float) throws {
-        try Self.validate(rawString: rawString)
-        
-        guard intensity.isBetweenZeroAndOne() else {
-            throw CKHapticError.intensityRangeInvalid
-        }
-        
-        guard sharpness.isBetweenZeroAndOne() else {
-            throw CKHapticError.sharpnessRangeInvalid
-        }
+        try Self.validate(rawString: rawString, allowedCharacters: Self.allowedCharacters, intensity: intensity, sharpness: sharpness)
         
         self.rawString = rawString
         self.intensity = intensity
@@ -78,12 +88,7 @@ public struct CKHapticBuzz: CKHapticEvent {
     ///
     /// - Throws: `CKHapticError`
     public static func create(_ rawString: String, intensity: Float, sharpness: Float) throws -> CKHapticEvent {
-        do {
-            return try self.init(rawString, intensity: intensity, sharpness: sharpness)
-        } catch {
-            print(#line, rawString, error)
-            throw error
-        }
+        return try self.init(rawString, intensity: intensity, sharpness: sharpness)
     }
     
     /// Converts event raw string to `CHHapticEvent` that the Core Haptics can play with.
@@ -151,6 +156,8 @@ public struct CKHapticBuzz: CKHapticEvent {
 /// One of the `CKHapticEvent` type. Haptic feedback with single beat. This converts into `hapticTransient` event type in the Core Haptics Library. The HIG explains "Transient events are brief and compact, often feeling like taps or impulses. The experience of tapping the Flashlight button on the Home Screen is an example of a transient event."
 public struct CKHapticBeat: CKHapticEvent {
     
+    private static var allowedCharacters: CharacterSet = .init(charactersIn: "_|")
+    
     /// Event raw string. e.g. "-|---------". This means "pause 1 + beat 1 + pause 8" out of 10. If the duration of play is 1 second, pause 0.1s + beat 0.1s + pause 0.8s. Beat 0.1s means just one beat and done, not beating continuously for 0.1 second.
     public var rawString: String
     
@@ -163,22 +170,14 @@ public struct CKHapticBeat: CKHapticEvent {
     }
     
     init(_ rawString: String, intensity: Float, sharpness: Float) throws {
-        try Self.validate(rawString: rawString)
+        try Self.validate(rawString: rawString, allowedCharacters: Self.allowedCharacters, intensity: intensity, sharpness: sharpness)
         
-        guard intensity.isBetweenZeroAndOne() else {
-            throw CKHapticError.intensityRangeInvalid
-        }
-        
-        guard sharpness.isBetweenZeroAndOne() else {
-            throw CKHapticError.sharpnessRangeInvalid
-        }
-
         self.rawString = rawString
         self.intensity = intensity
         self.sharpness = sharpness
     }
     
-    /// Create CKHapticBuzz event.
+    /// Create CKHapticBeat event.
     ///
     /// - Parameters:
     ///   - _ rawString: String that represents event pattern. It must contain only "\_" and "|". The length should be 1 and 256 letters. e.g. "-|---------". This means "pause 1 + beat 1 + pause 8" out of 10. If the duration of play is 1 second, pause 0.1s + beat 0.1s + pause 0.8s. Beat 0.1s means just one beat and done, not beating continuously for 0.1 second.
@@ -225,40 +224,6 @@ public struct CKHapticBeat: CKHapticEvent {
         }
         
         return results
-    }
-}
-
-// MARK: - Validation
-
-extension CKHapticBeat {
-    private static func validate(rawString: String) throws {
-        if rawString.isEmpty {
-            throw CKHapticError.eventRawStringInvalid
-        }
-        
-        if rawString.count > eventRawStringLengthMaxSupport {
-            throw CKHapticError.eventRawStringShouldBeUnderMaxSupport(support: eventRawStringLengthMaxSupport)
-        }
-        
-        if !rawString.allSatisfy({ $0 == "|" || $0 == "_" }) {
-            throw CKHapticError.eventRawStringInvalid
-        }
-    }
-}
-
-extension CKHapticBuzz {
-    private static func validate(rawString: String) throws {
-        if rawString.isEmpty {
-            throw CKHapticError.eventRawStringInvalid
-        }
-        
-        if rawString.count > eventRawStringLengthMaxSupport {
-            throw CKHapticError.eventRawStringShouldBeUnderMaxSupport(support: eventRawStringLengthMaxSupport)
-        }
-        
-        if !rawString.allSatisfy({ $0 == "_" || $0 == "-" }) {
-            throw CKHapticError.eventRawStringInvalid
-        }
     }
 }
 
